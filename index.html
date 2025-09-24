@@ -1,80 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta chartset="ütf-8" />
+    <meta charset="utf-8" />
     <title>Erik Post</title>
     <link
       rel="shortcut icon"
       sizes="16x16"
-      type="image/jpg"
-      href="images/favicon_tree.png"
+      type="image/png"
+      href="assets/images/favicon_tree.png"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body style="margin: 0">
-    <!--First section-->
-    <div
-      style="
-        background-image: url('images/background_image_forest.jpg');
-        background-size: cover;
-        height: 480px;
-        padding-top: 80px;
-        text-align: center;
-      "
-    >
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
       <img
-        src="images/profile_picture.jpg"
-        style="height: 150px; border-radius: 50%; border: 2px solid lightgray"
-        alt="This is a small profile image of me."
+        src="assets/images/profile_picture.jpg"
+        class="profile-pic"
+        alt="Profile picture of Erik Post"
       />
-      <div style="background-color: #388e3c">
-        <h1 style="font-size: 100px; color: white; margin: 10px">Erik Post</h1>
-        <p style="font-size: 30px; color: white">
-          <em>PhD Candidate Data Science in Parkinson's Disease</em>
-        </p>
+      <div class="hero-overlay">
+        <h1>Erik Post</h1>
+        <p>PhD Candidate · Data Science in Parkinson's Disease</p>
       </div>
-    </div>
-    <div>
-      <h1 style="font-size: 25px; color: black; text-align: center">
-        Publications
-      </h1>
-      <p style="font-size: 20px; color: lightcoral; text-align: center">
-        <a href="https://pubmed.ncbi.nlm.nih.gov/36708048/" target="_blank"
-          >An Apple a Day to Keep the Parkinson's Disease Doctor Away?
-        </a>
-      </p>
-      <p style="font-size: 20px; color: lightcoral; text-align: center">
-        <a href="https://pubmed.ncbi.nlm.nih.gov/38558217/" target="_blank"
-          >Reply to "An Apple a Day Will Not Keep the (Parkinson's Disease)
-          Doctor at Bay!"
-        </a>
-      </p>
-    </div>
+    </section>
 
-    <div>
-      <h1 style="font-size: 25px; color: black; text-align: center">Posters</h1>
-      <p style="font-size: 20px; color: lightcoral; text-align: center">
-        <a href="dps_poster.html">DPS '24 research poster</a>
-      </p>
-      <p style="font-size: 20px; color: lightcoral; text-align: center">
-        <a href="wpc_poster.html">WPC '23 research poster</a>
-      </p>
-    </div>
-    <div style="text-align: center">
-      <h1 style="font-size: 25px; color: black; text-align: center">Contact</h1>
-      <a href="https://www.linkedin.com/in/erikpost6/" target="_blank">
-        <img
-          src="images/linkedin.svg"
-          style="height: 25px"
-          alt="LinkedIn logo with link to profile."
-        />
-      </a>
-      <a href="mailto:erik.post@radboudumc.nl">
-        <img
-          src="images/mail_icon.png"
-          style="height: 25px"
-          alt="Mail icon to send an email."
-        />
-      </a>
-    </div>
+    <!-- Publications -->
+    <section class="content-section">
+      <h2>Publications</h2>
+      <ul class="link-list">
+        <li>
+          <a
+            href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-025-01578-z"
+            target="_blank"
+          >
+            Quantifying arm swing in Parkinson’s disease: a method accounting for arm activities during free-living gait (2025)
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://pubmed.ncbi.nlm.nih.gov/36708048/"
+            target="_blank"
+          >
+            An Apple a Day to Keep the Parkinson's Disease Doctor Away? (2023)
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://pubmed.ncbi.nlm.nih.gov/38558217/"
+            target="_blank"
+          >
+            Reply to "An Apple a Day Will Not Keep the (Parkinson's Disease) Doctor at Bay!" (2023)
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Posters -->
+    <section class="content-section">
+      <h2>Posters</h2>
+      <div class="grid-container">
+        <div class="grid-card">
+          <a href="pages/posters.html#ispgr_25" target="_blank">
+            <img src="assets/images/poster_thumbnails/poster_ispgr_25_thumb.jpg" alt="ISPGR 2025 Poster preview" class="thumbnail" />
+            <span>ISPGR 2025</span>
+          </a>
+        </div>
+        <div class="grid-card">
+          <a href="pages/posters.html#dps_24" target="_blank">
+            <img src="assets/images/poster_thumbnails/poster_dps_24_thumb.jpg" alt="DPS 2024 Poster preview" class="thumbnail" />
+            <span>DPS 2024</span>
+          </a>
+        </div>
+        <div class="grid-card">
+          <a href="pages/posters.html#wpc_23" target="_blank">
+            <img src="assets/images/poster_thumbnails/poster_wpc_23_thumb.jpg" alt="WPC 2023 Poster preview" class="thumbnail" />
+            <span>WPC 2023</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="content-section">
+      <h2>Packages</h2>
+      <ul class="link-list">
+        <li>
+          <a href="https://zenodo.org/records/15223364" target="_blank">
+            ParaDigMa (2025)
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="content-section contact">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/erikpost6/" target="_blank">
+          <img src="assets/images/linkedin.svg" alt="LinkedIn profile" />
+        </a>
+        <a href="mailto:erik.post@radboudumc.nl">
+          <img src="assets/images/mail_icon.png" alt="Send an email" />
+        </a>
+      </div>
+    </section>
   </body>
 </html>
