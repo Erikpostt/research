@@ -6,6 +6,7 @@ output_dir = "./assets/images/poster_thumbnails"
 os.makedirs(output_dir, exist_ok=True)
 
 pdf_files = [
+    ("poster_dps_25.pdf", "poster_dps_25_thumb.jpg"),
     ("poster_ispgr_25.pdf", "poster_ispgr_25_thumb.jpg"),
     ("poster_dps_24.pdf", "poster_dps_24_thumb.jpg"),
     ("poster_wpc_23.pdf", "poster_wpc_23_thumb.jpg"),
